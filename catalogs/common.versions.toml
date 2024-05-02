@@ -1,0 +1,17 @@
+[versions]
+library-group = "com.my.library"
+library-version = "0.0.1"
+android = "8.0.2"
+kotlin = "1.8.20"
+kover = "0.6.1"
+ksp = "1.8.20-1.0.11"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "kotlin" }
+
+[plugins]
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-lib = { id = "com.android.library", version.ref = "android" }
+android-app = { id = "com.android.application", version.ref = "android" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
